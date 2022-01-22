@@ -56,7 +56,7 @@ var saveSearch = function(){
 var searchHistory = function(searchHistory){
   searchHistoryEl = document.createElement("button");
   searchHistoryEl.textContent = searchHistory;
-  searchHistoryEl.classList = "d-flex w-100 btn-light border p-2";
+  searchHistoryEl.classList = "d-flex w-100 btn-light border border";
   searchHistoryEl.setAttribute("data-city", searchHistory);
   searchHistoryEl.setAttribute("type", "submit");
 
@@ -78,15 +78,15 @@ var displayWeather = function(weather, searchCity){
 
      var temperature = document.createElement("span");
      temperature.textContent = "Temperature: " + weather.main.temp + "°F";
-     temperature.classList = "List-group-item"
+     temperature.classList = "List-group-item py-1"
 
      var humidity = document.createElement("span");
      humidity.textContent = "Humidity: " + weather.main.humidity + "%";
-     humidity.classList = "List-group-item";
+     humidity.classList = "List-group-item py-1";
 
      var windSpeed = document.createElement("span");
      windSpeed.textContent = "Wind Speed: " + weather.wind.speed + "MPH";
-     windSpeed.classList = "List-group-item";
+     windSpeed.classList = "List-group-item py-1";
 
      weatherContainer.appendChild(temperature);
      weatherContainer.appendChild(humidity);
@@ -112,7 +112,7 @@ var getUvIndex = function(lat,lon){
 var displayUvIndex = function(index){
   var uvIndexEl = document.createElement("div");
   uvIndexEl.textContent = "UV Index: "
-  uvIndexEl.classList = "List-group-item";
+  uvIndexEl.classList = "List-group-item py-1";
 
   uvIndexValue = document.createElement("span");
   uvIndexValue.textContent = index.value;
@@ -136,7 +136,7 @@ var displayForcast = function(weather){
      for (i=5; i<forcast.length;i=i+8){
        var dailyForecast = forcast[i];
        var forcastCard = document.createElement("div");
-       forcastCard.classList = "card bg-primary text-light m-2";
+       forcastCard.classList = "card bg-success text-light m-2";
 
        var forcastDate = document.createElement("h5");
        forcastDate.textContent = moment.unix(dailyForecast.dt).format("MMM D, YYYY");

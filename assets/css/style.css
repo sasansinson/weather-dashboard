@@ -1,5 +1,5 @@
-.search-column{
-  background-color: rgb(255, 255, 255);
+body{
+  background-color:rgb(204, 204, 204)
 }
 
 .list-group-item{
@@ -23,3 +23,5 @@ span.favorable{
   background-color: green;
   color:white;
 }
+
+
