@@ -13,9 +13,11 @@ Your searched city will be saved in local storage and you can check weather agai
 - Moment.js
 - Bootstrap
 
-Here is teh screenshot of the page:
-
+Here is the screenshot of the page:
+![work-day-scheduler Page.](./image/screenshot.png)
 
 
 You can access to web page by following link:
+
+https://sasansinson.github.io/weather-dashboard/
 
